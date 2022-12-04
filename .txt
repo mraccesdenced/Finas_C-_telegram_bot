@@ -1,0 +1,37 @@
+/*
+                await Bot.SendTextMessageAsync(
+                    //Id чата того кто отправил сообщение 
+                    Messege.Chat.Id,
+                    //Тексте сообщения
+                    "Выберете функцию", 
+                    //использование ответа на сообщение
+                    replyToMessageId: Messege.MessageId ,
+                    //Вызов метода для кнопок
+                    replyMarkup : GetMassege());
+                
+                switch (Messege.Text) 
+                {
+                    case "Привет":
+                        await Bot.SendTextMessageAsync(Messege.Chat.Id, "Привет", replyMarkup: GetMassege());
+                        break;
+                    case "Стикер":
+                        await Bot.SendStickerAsync(chatId: Messege.Chat.Id, sticker: "https://cdn.tlgrm.app/stickers/ccd/a8d/ccda8d5d-d492-4393-8bb7-e33f77c24907/192/3.webp", replyMarkup: GetMassege());
+                        break;
+                    case "Картинка":
+                        await Bot.SendPhotoAsync(chatId: Messege.Chat.Id, photo:"https://cdnn21.img.ria.ru/images/07e5/06/18/1738448523_0:21:864:669_1920x0_80_0_0_9920bbedf3cb1a14b1358e0677d01106.jpg" , replyMarkup: GetMassege());
+                        break;
+                    default:
+                        await Bot.SendTextMessageAsync(Messege.Chat.Id, "Неверное имя Функции", replyMarkup: GetMassege());
+                        break*/
+//Кнопки при ответе не сообщение 
+        /*
+        private static IReplyMarkup GetMassege()
+        {
+            return new ReplyKeyboardMarkup
+            {
+                Keyboard = new List<List<KeyboardButton>>
+                {
+                    new List<KeyboardButton>{new KeyboardButton{Text = "Привет"},new KeyboardButton{Text = "Стикер"},new KeyboardButton{Text = "Картинка"} }
+                }
+            };
+        }*/
