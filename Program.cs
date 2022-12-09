@@ -20,7 +20,7 @@ namespace telegram_bot_test
     internal class Program
     {
         // Api ключ
-        private static string token { get; set; } = "5466316556:AAEHGTgXH64T0bl9dLEu9mXN_v2WjbNfLEA";
+        private static string token { get; set; } = "Your api key";
         //создание бота
         private static TelegramBotClient Bot;
         static void Main(string[] args)
